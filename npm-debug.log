@@ -31,19 +31,17 @@
 21 silly publish   version: '0.1.1',
 21 silly publish   description: 'Censors words out of text',
 21 silly publish   main: 'censortext',
-21 silly publish   repository:
-21 silly publish    { type: 'git',
-21 silly publish      url: 'git+ssh://git@github.com/veaphen/node.git' },
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/veaphen/node.git' },
 21 silly publish   keywords: [ 'censor', 'words' ],
 21 silly publish   dependencies: {},
 21 silly publish   engines: { node: '*' },
-21 silly publish   gitHead: '42f3d2959b4e05e98c5866daf658a32a0e26f5f5',
+21 silly publish   gitHead: '81339bb28310d5765cbb79e62ac75e089ca61521',
 21 silly publish   bugs: { url: 'https://github.com/veaphen/node/issues' },
 21 silly publish   readme: 'ERROR: No README data found!',
 21 silly publish   homepage: 'https://github.com/veaphen/node#readme',
 21 silly publish   _id: 'censorify@0.1.1',
 21 silly publish   scripts: {},
-21 silly publish   _shasum: 'e29fdbb3b35c72407ad34738d1f094a2d767063f',
+21 silly publish   _shasum: '4a0fe2698344b0f98c480c6a8f18b2d6eed2ce5e',
 21 silly publish   _from: '.' }
 22 verbose getPublishConfig undefined
 23 silly mapToRegistry name censorify
@@ -54,22 +52,22 @@
 28 silly publish uploading /Users/veaphen/.npm/censorify/0.1.1/package.tgz
 29 verbose request uri https://registry.npmjs.org/censorify
 30 verbose request sending authorization for write operation
-31 info attempt registry request try #1 at 16:33:36
+31 info attempt registry request try #1 at 16:40:02
 32 verbose request using bearer token for auth
-33 verbose request id 83aaa461f2755403
+33 verbose request id 2cf37de47efcc1f3
 34 http request PUT https://registry.npmjs.org/censorify
 35 http 403 https://registry.npmjs.org/censorify
 36 verbose headers { 'content-type': 'application/json',
 36 verbose headers   'cache-control': 'max-age=300',
 36 verbose headers   'content-length': '101',
 36 verbose headers   'accept-ranges': 'bytes',
-36 verbose headers   date: 'Fri, 11 Mar 2016 08:33:31 GMT',
+36 verbose headers   date: 'Fri, 11 Mar 2016 08:39:56 GMT',
 36 verbose headers   via: '1.1 varnish',
 36 verbose headers   connection: 'keep-alive',
-36 verbose headers   'x-served-by': 'cache-lcy1121-LCY',
+36 verbose headers   'x-served-by': 'cache-lcy1134-LCY',
 36 verbose headers   'x-cache': 'MISS',
 36 verbose headers   'x-cache-hits': '0',
-36 verbose headers   'x-timer': 'S1457685210.488445,VS0,VE615' }
+36 verbose headers   'x-timer': 'S1457685596.210106,VS0,VE588' }
 37 verbose request invalidating /Users/veaphen/.npm/registry.npmjs.org/censorify on PUT
 38 error publish Failed PUT 403
 39 verbose stack Error: You do not have permission to publish 'censorify'. Are you logged in as the correct user? : censorify

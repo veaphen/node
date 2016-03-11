@@ -3,31 +3,95 @@
 2 info using npm@3.7.3
 3 info using node@v5.8.0
 4 verbose publish [ '.' ]
-5 verbose stack Error: Failed to parse json
-5 verbose stack Unexpected token 'k' at 11:3
-5 verbose stack 	"keywords": [
-5 verbose stack 	 ^
-5 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:379:11)
-5 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:68:23)
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
-5 verbose stack     at tryToString (fs.js:414:3)
-5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:401:12)
-6 verbose cwd /Users/veaphen/nodeProject/node
-7 error Darwin 15.3.0
-8 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
-9 error node v5.8.0
-10 error npm  v3.7.3
-11 error file /Users/veaphen/nodeProject/node/package.json
-12 error code EJSONPARSE
-13 error Failed to parse json
-13 error Unexpected token 'k' at 11:3
-13 error 	"keywords": [
-13 error 	 ^
-14 error File: /Users/veaphen/nodeProject/node/package.json
-15 error Failed to parse package.json data.
-15 error package.json must be actual JSON, not just JavaScript.
-15 error
-15 error This is not a bug in npm.
-15 error Tell the package author to fix their package.json file. JSON.parse
-16 verbose exit [ 1, true ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/veaphen/nodeProject/node',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/veaphen/.npm/censorify/0.1.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/veaphen/.npm correctMkdir not in flight; initializing
+10 info lifecycle censorify@0.1.1~prepublish: censorify@0.1.1
+11 silly lifecycle censorify@0.1.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/veaphen/.npm/censorify/0.1.1/package.tgz',
+12 verbose tar pack   '/Users/veaphen/nodeProject/node' ]
+13 verbose tarball /Users/veaphen/.npm/censorify/0.1.1/package.tgz
+14 verbose folder /Users/veaphen/nodeProject/node
+15 verbose addLocalTarball adding from inside cache /Users/veaphen/.npm/censorify/0.1.1/package.tgz
+16 verbose correctMkdir /Users/veaphen/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd censorify@0.1.1
+18 verbose afterAdd /Users/veaphen/.npm/censorify/0.1.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/veaphen/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/veaphen/.npm/censorify/0.1.1/package/package.json written
+21 silly publish { author: { name: 'veaphen' },
+21 silly publish   name: 'censorify',
+21 silly publish   version: '0.1.1',
+21 silly publish   description: 'Censors words out of text',
+21 silly publish   main: 'censortext',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+ssh://git@github.com/veaphen/node.git' },
+21 silly publish   keywords: [ 'censor', 'words' ],
+21 silly publish   dependencies: {},
+21 silly publish   engines: { node: '*' },
+21 silly publish   gitHead: '42f3d2959b4e05e98c5866daf658a32a0e26f5f5',
+21 silly publish   bugs: { url: 'https://github.com/veaphen/node/issues' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   homepage: 'https://github.com/veaphen/node#readme',
+21 silly publish   _id: 'censorify@0.1.1',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: 'e29fdbb3b35c72407ad34738d1f094a2d767063f',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name censorify
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/censorify
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/veaphen/.npm/censorify/0.1.1/package.tgz
+29 verbose request uri https://registry.npmjs.org/censorify
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 16:33:36
+32 verbose request using bearer token for auth
+33 verbose request id 83aaa461f2755403
+34 http request PUT https://registry.npmjs.org/censorify
+35 http 403 https://registry.npmjs.org/censorify
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '101',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Fri, 11 Mar 2016 08:33:31 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-lcy1121-LCY',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1457685210.488445,VS0,VE615' }
+37 verbose request invalidating /Users/veaphen/.npm/registry.npmjs.org/censorify on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: You do not have permission to publish 'censorify'. Are you logged in as the correct user? : censorify
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at emitTwo (events.js:100:13)
+39 verbose stack     at Request.emit (events.js:185:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at emitOne (events.js:95:20)
+39 verbose stack     at Request.emit (events.js:182:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose statusCode 403
+41 verbose pkgid censorify
+42 verbose cwd /Users/veaphen/nodeProject/node
+43 error Darwin 15.3.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v5.8.0
+46 error npm  v3.7.3
+47 error code E403
+48 error You do not have permission to publish 'censorify'. Are you logged in as the correct user? : censorify
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

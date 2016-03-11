@@ -6,7 +6,7 @@
 	"main":"censortext",
 	"repository": {
 		"type":"git",
-		"url":"http://github.com/veaphen/node"
+		"url":"https://github.com/veaphen/node"
 	},
 	"keywords": [
 		"censor",

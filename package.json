@@ -7,11 +7,11 @@
 	"repository": {
 		"type":"git",
 		"url":"http://github.com/veaphen/node"
-	}
+	},
 	"keywords": [
 		"censor",
 		"words"
-	]
+	],
 	"dependencies":{},
 	"engines":{
 		"node":"*"
